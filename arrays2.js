@@ -9,11 +9,7 @@
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
 function isArrayLengthOdd(numbers) {
-  let count = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    count++;
-  }
-  return count % 2 !== 0;
+  return numbers.length % 2 !== 0;
 }
 console.log(isArrayLengthOdd([1, 2, 3]));
 console.log(isArrayLengthOdd([1, 2, 3, 4]));
@@ -29,11 +25,7 @@ console.log(isArrayLengthOdd([1, 2, 3, 4]));
  * isArrayLengthEven([1, 2, 3, 4]) -> true
  */
 function isArrayLengthEven(numbers) {
-  let count = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    count++;
-  }
-  return count % 2 === 0;
+  return numbers.length % 2 === 0;
 }
 console.log(isArrayLengthEven([1, 2, 3]));
 console.log(isArrayLengthEven([1, 2, 3, 4]));
